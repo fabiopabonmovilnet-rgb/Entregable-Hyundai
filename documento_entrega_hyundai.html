@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Documento de Entrega - Hyundai Automotores Kibun</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap');
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Inter', sans-serif; color: #1a1a2e; background: #f5f7fa; padding: 40px; }
+.page { max-width: 900px; margin: 0 auto; background: #fff; border-radius: 16px; box-shadow: 0 8px 40px rgba(0,0,0,0.08); padding: 48px; }
+h1 { font-size: 28px; font-weight: 800; color: #002c5f; margin-bottom: 4px; }
+h1 span { color: #00a5cf; }
+.subtitle { font-size: 14px; color: #6c757d; margin-bottom: 32px; }
+h2 { font-size: 18px; font-weight: 700; color: #002c5f; margin: 32px 0 12px; padding-bottom: 8px; border-bottom: 2px solid #00a5cf; }
+h3 { font-size: 15px; font-weight: 600; color: #003f7f; margin: 20px 0 8px; }
+p, li { font-size: 13px; line-height: 1.7; color: #343a40; }
+ul, ol { padding-left: 20px; margin: 8px 0; }
+li { margin-bottom: 4px; }
+strong { color: #002c5f; }
+.code { background: #f0f4f8; padding: 12px 16px; border-radius: 8px; font-family: 'Courier New', monospace; font-size: 13px; margin: 8px 0; border-left: 3px solid #00a5cf; }
+.tag { display: inline-block; background: #00a5cf; color: #fff; font-size: 11px; font-weight: 600; padding: 2px 10px; border-radius: 100px; text-transform: uppercase; letter-spacing: 0.5px; }
+.tag.blue { background: #002c5f; }
+.tag.green { background: #25D366; }
+.card { background: #f8f9fa; border-radius: 12px; padding: 20px; margin: 12px 0; border: 1px solid #e9ecef; }
+.card-cred { background: #fff3cd; border-radius: 12px; padding: 20px; margin: 12px 0; border: 1px solid #ffc107; }
+.card-cred h3 { color: #856404; margin-top: 0; }
+.footer-note { margin-top: 40px; padding-top: 20px; border-top: 1px solid #e9ecef; font-size: 12px; color: #adb5bd; text-align: center; }
+table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 13px; }
+th, td { padding: 10px 14px; text-align: left; border-bottom: 1px solid #e9ecef; }
+th { background: #002c5f; color: #fff; font-weight: 600; }
+tr:nth-child(even) { background: #f8f9fa; }
+a { color: #00a5cf; text-decoration: none; }
+a:hover { text-decoration: underline; }
+@media print { body { background: #fff; padding: 0; } .page { box-shadow: none; padding: 24px; } }
+</style>
+</head>
+<body>
+<div class="page">
+
+<h1>Hyundai <span>Automotores Kibun</span></h1>
+<p class="subtitle">Documento de Entrega - Landing Page Corporativa</p>
+
+<!-- 1. LINKS -->
+<h2>1. Enlaces del Proyecto</h2>
+<table>
+  <tr><th>Componente</th><th>URL</th></tr>
+  <tr><td><strong>Landing Page Hyundai</strong></td><td><a href="https://latinbienti-sys.github.io/hyundai/">https://latinbienti-sys.github.io/hyundai/</a></td></tr>
+  <tr><td><strong>Simulador de Financiamiento</strong></td><td><a href="https://fabiopabonmovilnet-rgb.github.io/automotores-kibun-simulador/hyundai_proforma.html">https://fabiopabonmovilnet-rgb.github.io/automotores-kibun-simulador/hyundai_proforma.html</a></td></tr>
+  <tr><td><strong>Panel Administrativo</strong></td><td><a href="https://fabiopabonmovilnet-rgb.github.io/kibun-dashboard/">https://fabiopabonmovilnet-rgb.github.io/kibun-dashboard/</a></td></tr>
+</table>
+
+<!-- 2. CREDENCIALES -->
+<h2>2. Credenciales de Acceso</h2>
+<div class="card-cred">
+  <h3>Panel Administrativo</h3>
+  <table>
+    <tr><th>Rol</th><th>Email</th><th>Contraseña</th></tr>
+    <tr><td><span class="tag blue">Admin</span></td><td>admin@automotoreskibun.com</td><td><code>KibunAdmin2026</code></td></tr>
+  </table>
+  <p style="margin-top:8px;font-size:12px;color:#856404;">El panel permite gestionar vendedores, asignar leads y visualizar proformas generadas desde el simulador.</p>
+</div>
+
+<!-- 3. RESUMEN DE MÓDULOS -->
+<h2>3. Resumen de Módulos</h2>
+
+<h3>3.1 Landing Page Hyundai</h3>
+<p>Sitio web corporativo de una página (landing page) del concesionario oficial Hyundai en Mérida, Venezuela. Desarrollada con HTML, CSS y JavaScript vanilla. Incluye:</p>
+<ul>
+  <li><strong>Hero Carrusel:</strong> 4 slides con vehículos destacados (Creta, Palisade, Tucson, Elantra). El slide inicial es el Creta con el copy "Con CRETA concreta tus sueños". Navegación por flechas y dots. Auto-play cada 6.5s.</li>
+  <li><strong>Sección Modelos:</strong> Grilla de vehículos con filtros por categoría (Hatchback, Sedán, SUV). Modal con ficha técnica completa y selector de colores.</li>
+  <li><strong>Sección Servicios:</strong> Formulario de agendamiento de citas con envío a WhatsApp + Webform.</li>
+  <li><strong>Formulario de Contacto:</strong> Captura de leads con envío a endpoint Webform corporativo.</li>
+  <li><strong>WhatsApp Flotante:</strong> Burbuja en esquina inferior derecha con animación de aparición al hacer scroll.</li>
+  <li><strong>Simulador de Financiamiento:</strong> Calculadora interactiva de cuotas mensuales con datos reales de vehículos.</li>
+  <li><strong>Responsive:</strong> Adaptado a móvil, tablet y escritorio.</li>
+</ul>
+
+<h3>3.2 Simulador de Financiamiento</h3>
+<p><a href="https://fabiopabonmovilnet-rgb.github.io/automotores-kibun-simulador/hyundai_proforma.html">fabiopabonmovilnet-rgb.github.io/automotores-kibun-simulador/hyundai_proforma.html</a></p>
+<ul>
+  <li>Genera proformas personalizadas de financiamiento vehicular.</li>
+  <li>Permite seleccionar modelo, calcular inicial, plazo y cuota mensual estimada.</li>
+  <li>Exporta/visualiza resumen de la cotización.</li>
+  <li>Los datos se envían al panel administrativo para seguimiento.</li>
+</ul>
+
+<h3>3.3 Panel Administrativo</h3>
+<p><a href="https://fabiopabonmovilnet-rgb.github.io/kibun-dashboard/">fabiopabonmovilnet-rgb.github.io/kibun-dashboard/</a></p>
+<ul>
+  <li><strong>Login:</strong> Autenticación con credenciales de administrador o vendedor.</li>
+  <li><strong>Dashboard:</strong> Resumen de leads, proformas y métricas.</li>
+  <li><strong>Gestión de Vendedores:</strong> Crear, editar y asignar vendedores a leads.</li>
+  <li><strong>Asignación de Leads:</strong> Distribuir prospectos entre el equipo de ventas.</li>
+  <li><strong>Historial:</strong> Seguimiento de proformas generadas y estado de cada lead.</li>
+</ul>
+
+<!-- 4. MANUAL DE USUARIO -->
+<h2>4. Manual de Usuario (Resumen)</h2>
+
+<h3>4.1 Landing Page - Visitante</h3>
+<ol>
+  <li><strong>Navegar modelos:</strong> En la sección "Modelos" usar los filtros (Todos / Hatchback / Sedán / SUV). Hacer clic en una tarjeta para ver ficha técnica completa. Seleccionar color desde los botones circulares.</li>
+  <li><strong>Simular financiamiento:</strong> Ir a "Calcula tu Financiamiento". Seleccionar modelo, ajustar % inicial y plazo con los sliders. Leer cuota mensual estimada.</li>
+  <li><strong>Agendar servicio:</strong> En "Servicios", llenar el formulario con datos del vehículo y fecha deseada. Se abre WhatsApp con el resumen de la cita.</li>
+  <li><strong>Solicitar cotización:</strong> Usar el botón "Solicitar Cotización" en el menú o el formulario de contacto. Un asesor se comunicará.</li>
+  <li><strong>WhatsApp:</strong> Hacer clic en la burbuja verde flotante para contactar directamente.</li>
+</ol>
+
+<h3>4.2 Panel Administrativo - Admin</h3>
+<ol>
+  <li><strong>Ingresar:</strong> Ir al link del panel. Usar credenciales de administrador (<code>admin@automotoreskibun.com</code> / <code>KibunAdmin2026</code>).</li>
+  <li><strong>Dashboard:</strong> Visualizar leads recibidos, proformas generadas y actividad reciente.</li>
+  <li><strong>Gestionar vendedores:</strong> Ir a la sección de usuarios/vendedores. Agregar nuevo vendedor con nombre, email y contraseña. Editar o desactivar existentes.</li>
+  <li><strong>Asignar leads:</strong> En la bandeja de leads, seleccionar un prospecto y asignarlo a un vendedor específico. El vendedor recibe notificación.</li>
+  <li><strong>Seguimiento:</strong> Revisar estado de cada lead (nuevo, contactado, cerrado). Exportar reportes si está disponible.</li>
+  <li><strong>Crear vendedores:</strong> El administrador crea usuarios para cada vendedor, asignando un PIN de acceso individual que se entrega al vendedor de forma interna.</li>
+</ol>
+
+<!-- 5. CONSIDERACIONES TÉCNICAS -->
+<h2>5. Consideraciones Técnicas</h2>
+<ul>
+  <li><strong>Hosting:</strong> Landing Page en GitHub Pages (gratuito). Simulador y Panel en Netlify (plan gratuito con límites; escalar a plan de pago según crecimiento del proyecto). <em>El costo de alojamiento no está incluido en este proyecto y corre por cuenta del cliente según el proveedor que elija.</em></li>
+  <li><strong>Datos de contacto:</strong> Cualquier cambio de dirección, número telefónico, email o datos de la empresa debe ser indicado por escrito para su actualización en el sitio.</li>
+</ul>
+
+<div class="footer-note">
+  Documento generado el 15/07/2026 &mdash; Hyundai Automotores Kibun &mdash; Concesionario Oficial Hyundai Mérida, Venezuela
+</div>
+
+</div>
+</body>
+</html>
